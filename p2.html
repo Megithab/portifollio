@@ -4,75 +4,61 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Personal Website</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
     <style>
         body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
             background-color: #f4f4f4;
         }
-        header {
+        .header {
             background: #35424a;
             color: #ffffff;
-            padding: 10px 0;
-            text-align: center;
+            padding: 20px 0;
         }
-        nav {
-            margin: 20px 0;
-        }
-        nav a {
-            margin: 0 15px;
-            color: #35424a;
-            text-decoration: none;
-        }
-        section {
-            margin: 20px;
-            padding: 20px;
-            background: #ffffff;
-            border-radius: 5px;
-        }
-        footer {
-            text-align: center;
-            padding: 10px 0;
+        .footer {
             background: #35424a;
             color: #ffffff;
-            position: relative;
-            bottom: 0;
-            width: 100%;
+            padding: 20px 0;
         }
     </style>
 </head>
 <body>
 
-<header>
+<header class="header text-center">
     <h1>Welcome to My Personal Website</h1>
-    <nav>
-        <a href="#about">About Me</a>
-        <a href="#projects">Projects</a>
-        <a href="#contact">Contact</a>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light justify-content-center">
+        <a class="navbar-brand" href="#about">About my interests</a>
     </nav>
 </header>
 
-<section id="about">
-    <h2>About Me</h2>
-    <p>Hello! I'm [Sumeya], a [Student]. I love [Reading books,]. This website showcases my work and interests.</p>
-</section>
+<div class="container mt-5">
+    <section id="about" class="mb-5">
+        <h2>About Me</h2>
+        <p>Hello! I'm Sumeya, a student. This website showcases my work and interests. Welcome to my page! I'm thrilled to share a little about myself.
 
-<section id="projects">
-    <h2>Projects</h2>
-    <ul>
-        <li><strong>Project 1:</strong> Description of project 1.</li>
-        <li><strong>Project 2:</strong> Description of project 2.</li>
-        <li><strong>Project 3:</strong> Description of project 3.</li>
-    </ul>
-</section>
+        I am deeply passionate about psychology and fascinated by how nutrition can impact mental well-being. Understanding the connection between our minds and bodies is something I love to explore.
 
-<section id="contact">
-    <h2>Contact Me</h2>
-    <p>If you'd like to get in touch, feel free to reach out via email at <a href=[sumeyaezedin@gmail.com]
-	">.com</a>.</p>
-</section>
+        In my free time, you can find me immersed in a good book, enjoying a workout at the gym, or taking long walks in nature to recharge my spirit.
 
+        Let's connect and grow together! Feel free to reach out if you share similar interests or just want to chat!</p>
+    </section>
+
+    <section id="contact" class="mb-5">
+        <h2>Contact Me</h2>
+        <p>If you'd like to get in touch, feel free to reach out via email at 
+            <a href="mailto:sumeyaezedin@gmail.com">sumeyaezedin@gmail.com</a>.
+        </p>
+    </section>
+</div>
+
+<footer class="footer text-center">
+    <p>&copy; 2023 Sumeya. All rights reserved.</p>
+</footer>
+
+<!-- Bootstrap JS and dependencies -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 
 </body>
 </html>
